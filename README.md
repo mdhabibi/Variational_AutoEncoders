@@ -1,19 +1,34 @@
-# Variational AutoEncoders (VAEs)
-This repository contains implementations of various Variational AutoEncoder (VAE) models using the Keras deep learning framework. The models are applied to different datasets and feature diverse architectures to explore and demonstrate the potential of VAEs in the fields of neural compression and generative modeling.
+# Variational AutoEncoders (VAEs) with Keras
 
-# End-to-End $\beta$-VAE_MNIST
-$\beta$-Variational Autoencoder of MNIST in Keras
+This repository offers a collection of notebooks implementing various Variational AutoEncoder (VAE) architectures using the Keras deep learning framework. These implementations span multiple datasets and offer insights into the capabilities of VAEs for tasks such as neural compression and generative modeling.
 
-The provided script includes the required code for creating, training, and evaluating a **$\beta$-Variational Autoencoder ($\beta$-VAE)** using the MNIST dataset. The MNIST dataset comprises grayscale images of handwritten digits ranging from `0` to `9`, each with dimensions of `28` by `28` pixels. The **Keras** framework was employed in this project.
+---
 
+## $\beta$-VAE with MNIST Dataset
 
-# End-to-End $\beta$-VAE_CIFAR10
-$\beta$-Variational Autoencoder of CIFAR10 in Keras
+This notebook provides a complete pipeline for building, training, and evaluating a $\beta$-Variational Autoencoder ($\beta$-VAE) applied to the MNIST dataset. The MNIST dataset consists of grayscale images of handwritten digits (`0` to `9`), each having dimensions of `28x28` pixels.
 
-The provided script includes the required code for creating, training, and evaluating a **$\beta$-Variational Autoencoder ($\beta$-VAE)** using the CIFAR10 dataset. The CIFAR-10 dataset consists of 60,000 `32x32` color images in `10` classes, with `6000` images per class. Our primary aim is to train a VAE to encode these images into a lower-dimensional latent space, and then reconstruct the original images from this encoded representation. The notebook also delves into the evaluation of the trained model, comparing the original and reconstructed images for a comprehensive understanding of the model's performance. The **Keras** framework was employed in this project.
+### Technologies Used
+- Framework: Keras
 
+---
 
-# beta-VAE-STL10
-Variational Autoencoder of STL10 with Keras
+## $\beta$-VAE with CIFAR-10 Dataset
 
-This notebook explores the use of **$\beta$-Variational Autoencoders ($\beta$-VAEs)** for the **STL-10 dataset**. This dataset is designed for evaluating unsupervised and semi-supervised learning algorithms, offering 10 classes of `96x96` pixel images. Unlike similar datasets, STL-10 provides both labeled and unlabeled images, making it an excellent benchmark for exploring feature learning techniques in higher-resolution data.
+In this notebook, you'll find the necessary code for creating, training, and assessing a $\beta$-VAE on the CIFAR-10 dataset. The CIFAR-10 dataset contains 60,000 color images of `32x32` pixels, distributed across `10` different classes, each with `6000` images. The primary goal is to employ VAEs for encoding these images into a lower-dimensional latent space and then reconstructing them. The notebook also evaluates the model by comparing the original and reconstructed images.
+
+### Technologies Used
+- Framework: Keras
+
+---
+
+## $\beta$-VAE with STL-10 Dataset
+
+This notebook focuses on the application of $\beta$-VAEs to the STL-10 dataset. The STL-10 dataset is tailored for unsupervised and semi-supervised learning methods, featuring `96x96` pixel images across 10 classes. Unlike other similar datasets, STL-10 offers both labeled and unlabeled data, making it ideal for exploring feature learning techniques on higher-resolution images.
+
+### Technologies Used
+- Framework: Keras
+
+---
+
+For a more detailed understanding, each notebook includes extensive commentary and evaluation metrics to gauge the model's performance. Feel free to explore!
